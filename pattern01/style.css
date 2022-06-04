@@ -179,6 +179,6 @@ section img {
 }
 
 section img:hover {
-    width: 310px;
-    height: 260px;
+    border-radius: 100px 3px;
+    transition: 1s;
 }
