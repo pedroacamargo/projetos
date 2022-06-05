@@ -136,10 +136,11 @@ nav a:hover {
 
 section {
     background-color: whitesmoke;
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     padding: 40px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.144);
+    border-bottom: 1px solid gray;
 }
 
 section:hover {
@@ -156,11 +157,12 @@ section h1 {
 }
 
 div.linha-h1 {
-    width: 600px;
+    width: 200px;
     height: 3px;
     background-color: rgb(128, 22, 22);
     margin: 0px 0px 0px 20px;
 }
+
 
 section p {
     padding: 5px 30px 30px 20px;
@@ -178,7 +180,24 @@ section img {
     box-shadow: 2px 2px 5px black;
 }
 
-section img:hover {
+section:hover > img {
     border-radius: 100px 3px;
-    transition: 1s;
+    width: 330px;
+    height: 270px;
+    transition: 2s;
+}
+
+section:hover > div.linha-h1 {
+    width: 600px;
+    height: 3px;
+    transition: 2s;
+    background-color: rgb(19, 42, 104);
+}
+
+section:hover > h1 {
+    color: rgb(19, 42, 104);
+}
+
+section:hover > p {
+    color: black;
 }
