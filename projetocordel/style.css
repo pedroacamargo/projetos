@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Lobster&family=Pangolin&display=swap');
+
+:root {
+    --font01: 'Exo';
+    --font02: 'Indie Flower';
+    --font03: 'Dancing Script';
+    --font04: 'Lobster';
+    --font05: 'Pangolin';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    color: white;
+    background-color: black;
+    padding: 30px 40px 30px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font01);
+    font-size: 10vw;
+}
+
+header p {
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+header p a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+header p a:hover {
+    text-decoration: underline;
+}
+
+section.branco {
+    padding: 40px;
+    text-align: left;
+    line-height: 2em;
+    font-family: var(--font05);
+    font-size: 4vw;
+    background-color: white;
+}
