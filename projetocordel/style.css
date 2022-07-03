@@ -51,7 +51,7 @@ section.branco {
     font-family: var(--font05);
     font-size: 4vw;
     background-color: white;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.377);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.719);
 }
 
 section {
@@ -78,13 +78,14 @@ section.imagem {
 
 section.imagem p{
     display: inline-block;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.199);
     color: white;
     text-align: left;
     font-family: var(--font05);
     font-size: 4vw;
     padding: 5px;
     line-height: 2em;
+    text-shadow: 2px 2px 0px black;
 
 }
 
@@ -92,3 +93,18 @@ section p {
     padding: 60px 0px 0px 0px;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font01);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
