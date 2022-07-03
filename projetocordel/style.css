@@ -51,4 +51,44 @@ section.branco {
     font-family: var(--font05);
     font-size: 4vw;
     background-color: white;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.377);
 }
+
+section {
+    background-color: none;
+    padding: 40px;
+}
+
+section#img01 {
+    background-image: url("imagens/background001.jpg");
+    background-attachment: fixed;
+    
+}
+
+section#img02 {
+    background-image: url("imagens/background002.jpg");
+    background-attachment: fixed;
+}
+
+section.imagem {
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+section.imagem p{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-family: var(--font05);
+    font-size: 4vw;
+    padding: 5px;
+    line-height: 2em;
+
+}
+
+section p {
+    padding: 60px 0px 0px 0px;
+}
+
