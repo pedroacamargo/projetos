@@ -4,3 +4,5 @@
 <a href="https://pedroacamargo.github.io/projetos/pattern01/index.html">1° site (no responsive :/)</a>
 
 <a href="https://pedroacamargo.github.io/projetos/projetocordel/index.html">Projeto Cordel</a>
+
+<a href="https://pedroacamargo.github.io/projetos/projeto-social/index.html">Projeto redes sociais</a>
