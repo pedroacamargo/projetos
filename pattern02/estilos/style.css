@@ -17,11 +17,15 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    padding: 10px;
+    vertical-align: center;
 }
 
 main {
     background-color: rgba(255, 255, 255, 0.523);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 400px;
     height: 600px;
     margin: auto;
@@ -45,9 +49,14 @@ section > form > input#nome, input#password {
     height: 35px;
     padding: 0px 0px 0px 15px;
     border-radius: 0px 20px 0px 20px;
-    border: 1px solid black;
+    border: 2px solid black;
     color: gray;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.69);
+}
+
+input#nome:hover, input#password:hover {
+    border: 2px solid blue;
+    transition: 0.3s;
 }
 
 section > form > input#remember, label {
@@ -62,30 +71,31 @@ section > form > label {
     top: -1px;
 }
 
-section > form > input[type=button] {
+a.password {
     background-color: black;
-    width: 125px;
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
     border: 1px solid whitesmoke;
+    text-decoration: none;
     color: whitesmoke;
     font-weight: 500;
     font-size: 12px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.52);
-    cursor: pointer;
 }
 
-section > form > input[type=button]:hover {
+a.password:hover {
     background-color: white;
     color: black;
+    transition: 0.3s;
+
 }
 
 a.password > div {
     display: none;
     position: absolute;
     width: 200px;
-    height: 200px;
-    background-color: white;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.826);
     border-radius: 20px;
     box-shadow: 2px 2px 5px black;
     z-index: 1;
@@ -93,6 +103,27 @@ a.password > div {
 
 a.password:hover > div {
     display: inline-block;
+    cursor: default;
+}
+
+div#forgotpassword > input {
+    width: 150px;
+    height: 20px;
+    position: relative;
+    top: 20px;
+    border: 1px solid black;
+    padding: 0px 0px 0px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+
+div#forgotpassword > input#submit-btn {
+    width: 70px;
+    font-weight: 600;
+    padding: 0;
+    cursor: pointer;
+
 }
 
 a.login {
