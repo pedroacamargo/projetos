@@ -1,0 +1,20 @@
+<a href="#" class="password">Forgot Password <div id="forgotpassword"></div></a>
+
+a.password {
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid whitesmoke;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.52);
+}
+
+a.password:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+
+}
