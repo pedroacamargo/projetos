@@ -220,47 +220,52 @@ aside {
     box-sizing: border-box;
 }
 
-div.cube {
-    font-family: var(--font01);
-    border: 2px solid rgb(99, 116, 160);
-    border-radius: 20px;
-    width: 275px;
+.rectangles-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rectangle {
     height: 450px;
-    color: white;
+    width: 300px;
+    border: 2px solid rgba(255, 255, 255, 0.133);
+    margin: 20px;
     text-align: center;
-    padding: 20px 0px 0px 0px;
-    display: inline-block;
-    margin: 5px 32px;
+    padding-top: 20px;
+    border-radius: 20px;
+    color: white;
+    font-family: var(--font01);
 }
 
-div.cube h1 {
-    padding: 20px;
+.rectangle h1 {
+    padding: 30px;
+    font-family: var(--font02);
 }
 
-div.cube p {
-    line-height: 1.5em;
-    margin-bottom: 30px;
+.rectangle p {
+    line-height: 1.7em;
+    font-weight: bold;
 }
 
-.cube > img {
-    height: 170px;
-    width: 230px;
+.rectangle-img {
+    width: 87%;
 }
 
-.btn {
-    width: 150px;
-    padding: 18px 20px;
-    border-radius: 10px;
+.rectangle-btn {
     background-color: #72120B;
-    margin: auto;
-}
-
-.cube:hover {
-    background-color: rgba(255, 255, 255, 0.106);
-}
-
-.btn:hover {
+    padding: 20px 65px;
+    border-radius: 10px;
     position: relative;
-    padding: 22px;
-    transition: 0.3s;
+    top: 30px;
+}
+
+.rectangle:hover {
+    background-color: #305c8865;
+}
+
+a.rectangle-btn:hover {
+    padding: 23px 75px;
+    transition: .5s ease-in-out;
 }
