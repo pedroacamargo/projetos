@@ -28,90 +28,82 @@ a {
     color: white;
 }
 
-header {
+.menu-container {
     background-color: #003366;
-    background-size: cover;
     color: white;
-    height: 41px;
-    font-family: var(--font02);
-    padding: 20px 0px 0px 15%;
-    font-weight: 300;
-    font-size: 1em;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    font-family: var(--font01);
 }
 
-header span {
-    padding: 0px 15px 30px 30px;
+.menu { 
+    display: flex;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-header span:last-child {
-    padding: 0;
+.menu > .menu-item {
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
 
-header span.img-cel::after {
-    content: url("imagens/telephone\ \(1\).png");
-    padding: 0px 0px 0px 5px;
+.link-menu {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    margin-top: 5px;
+}
+
+.link-menu > a {
+    padding: 0px 10px;
+}
+
+.menu-item::before {
     position: relative;
     top: 3px;
+    left: -4px;
+} 
+
+.img-cel::before {
+    content: url('imagens/telephone\ \(1\).png');
 }
 
-header span.img-mail::after {
-    content: url("imagens/email.png");
-    padding: 0px 0px 0px 5px;
-    position: relative;
-    top: 3px;
+.img-mail::before {
+    content: url('imagens/email.png');
 }
 
-header span a:first-child {
-    text-decoration: none;
-    color: white;
-    font-weight: 300;
-    background-color: #18a01f;
-    padding: 10px 10px 10px 10px;
-    border-radius: 100px;
-    margin-left: 2%;
-    width: 25%;
+.img-whats {
+    background-color: #2ba531;
+    padding: 10px;
+    border-radius: 30px;
+    width: 189px;
 }
 
-header span.img-whats a::after {
-    content: url("imagens/phone.png");
-    padding: 0px 0px 0px 5px;
-    position: relative;
-    top: 3px;
-    height: 10px;
+.img-on {
+    background-color: #08af9c;
+    padding: 10px;
+    border-radius: 30px;
+    width: 136px;
 }
 
-header span.img-whats a:hover {
-    background-color: #16771b;
+.img-whats::before {
+    content: url('imagens/phone.png');
 }
 
-header span.img-on a {
-    width: 25%;
-    text-decoration: none;
-    color: white;
-    font-weight: 300;
-    background-color: #17a090;
-    padding: 10px 10px 10px 10px;
-    border-radius: 100px;
-    margin-left: 0%;
+.img-on::before {
+    content: url('imagens/speech-bubble.png');
 }
 
-header span.img-on a::after {
-    content: url("imagens/speech-bubble.png");
-    padding: 0px 0px 0px 5px;
-    position: relative;
-    top: 3px;
-    height: 10px;
+.img-whats:hover {
+    background-color: #257429;
 }
 
-header span.img-on a:hover {
-    background-color: #16776c;
-}
-
-/*media querie*/
-@media screen and (max-width: 800px) {
-    span.img-on span.img-whats {
-        width: 100%;
-    }
+.img-on:hover {
+    background-color: #18665d;
 }
 
 nav {
