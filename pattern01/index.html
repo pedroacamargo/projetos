@@ -52,9 +52,23 @@
 
         </div>
     </aside>
-    <form action="#">
+    
+    <div class="form-container">
+        <div class="linha"></div>
+        <h1>Entre em <br> Contato</h1>
+        <form action="#" autocomplete="off" method="post">
+            <div class="write">
+                <div class="link">
+                    <input type="text" name="user" id="iuser" placeholder="Nome:" class="input">
+                    <input type="email" name="email" id="iemail" placeholder="Email:" class="input">
+                    <input type="text" name="number" id="inumber" placeholder="Telefone:" class="input">
+                </div>
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Mensagem:" class="message-box input"></textarea>
+            </div>
+            <input type="submit" value="Enviar" class="forms-btn">
+        </form>
 
-    </form>
+    </div>
 
 </body>
 </html>

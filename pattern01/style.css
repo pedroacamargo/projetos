@@ -269,3 +269,83 @@ a.rectangle-btn:hover {
     padding: 23px 75px;
     transition: .5s ease-in-out;
 }
+
+.form-container {
+    background-color: white;
+    max-width: 1080px;
+    padding: 30px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.linha {
+    width: 10%;
+    height: 3px;
+    background-color: #72120B;
+}
+
+.form-container:hover > .linha {
+    width: 100%;
+    transition: 2s ease-in-out;
+}
+
+.form-container > h1 {
+    color: #72120B;
+    font-family: var(--font03);
+    text-align: center;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.write {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.message-box {
+    display: flex;
+    flex: 1;
+    align-self: flex-start;
+    margin: 5px;
+    height: 215px;
+    box-sizing: border-box;
+}
+
+.input {
+    margin: 5px 5px 5px 0;
+    background-color: rgba(137, 136, 93, 0.181);
+    border: none;
+    padding: 20px 0px 20px 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: var(--font01);
+}
+
+.forms-btn {
+    background-color: #72120B;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    font-size: 1.2em;
+    font-family: var(--font03);
+    cursor: pointer;
+    
+}
+
+.forms-btn:hover {
+    background-color: #b16100;
+}
