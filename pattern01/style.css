@@ -133,32 +133,24 @@ nav a:hover {
 
 .welcome-container {
     background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.442);
 }
 
 .welcome {
     display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    max-width: 1080px;
-    padding: 10px;
-    margin: 20px;
-
-}
-
-.test {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1080px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .welcome-written {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    max-width: 550px;
+    justify-content: flex-start;
+    width: 550px;
     height: 366px;
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -182,7 +174,6 @@ nav a:hover {
     color: white;
     position: relative;
     top: 40px;
-    left: 130px;
     background-color: #72120B;
     border-radius: 10px;
     padding: 20px 40px;
@@ -190,25 +181,51 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.welcome-img {
+.welcome .welcome-img {
     display: flex;
+    position: relative;
+    height: 366px;
+    width: 430px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .welcome-img > img {
-    max-width: 450px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px black;
+    width: 430px;
+    height: 366px;
 }
 
-.welcome-container:hover > .welcome > .test > .welcome-written > span > a {
-    padding: 22px 45px;
-    transition: 2s;
+.transparent {
+    background-color: #b1610090;
+    color: white;
+    font-family: var(--font03);
+    font-size: 1.2em;
+    right: 430px;
+    height: 366px;
+    width: 430px;
+    position: absolute;
+    z-index: 2;
+    transition: 3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.welcome-container:hover > .welcome > .test > .welcome-written > div.linha {
-    width: 380px;
-    transition: 2s;
+.welcome-container:hover > .welcome > .welcome-img > .transparent {
+    right: 0px;
 }
+
+.linha2 {
+    height: 4px;
+    width: 20px;
+    background-color: #72120B;
+    transition: 1s;
+}
+
+.welcome-container:hover > .welcome > .welcome-written > .linha2 {
+    width: 100%;
+}
+
 
 
 aside {
@@ -282,11 +299,11 @@ a.rectangle-btn:hover {
     width: 10%;
     height: 3px;
     background-color: #72120B;
+    transition: 2s;
 }
 
 .form-container:hover > .linha {
     width: 100%;
-    transition: 2s ease-in-out;
 }
 
 .form-container > h1 {
