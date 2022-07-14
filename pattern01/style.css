@@ -308,14 +308,32 @@ a.rectangle-btn:hover {
     box-sizing: border-box;
 }
 
+.transparent2 {
+    position: absolute;
+    width: 1020px;
+    height: 405px;
+    background-color: rgba(255, 255, 255, 0.264);
+    transition: 1s;
+}
+
+.form-container:hover > .transparent2 {
+    display: none;
+}
+
 .linha {
-    width: 10%;
+    width: 100%;
+    height: 3px;
+    background-color: #eee;
+}
+
+.linhaa {
+    width: 40px;
     height: 3px;
     background-color: #72120B;
     transition: 2s;
 }
 
-.form-container:hover > .linha {
+.form-container:hover > .linha > .linhaa {
     width: 100%;
 }
 
@@ -379,3 +397,4 @@ form {
 .forms-btn:hover {
     background-color: #b16100;
 }
+
