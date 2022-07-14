@@ -87,7 +87,7 @@ a {
     background-color: #08af9c;
     padding: 10px;
     border-radius: 30px;
-    width: 136px;
+    width: 144px;
 }
 
 .img-whats::before {
@@ -398,3 +398,70 @@ form {
     background-color: #b16100;
 }
 
+iframe {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    background-color: #003366;
+    border: 1px solid black;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo-footer > a > img {
+    width: 225px;
+    padding: 20px;
+}
+
+.contacts {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: var(--font02);
+}
+
+h2.contatos {
+    padding: 25px 10px;
+    border-right: 2px solid white;
+}
+
+.item {
+    padding: 10px;
+}
+
+.services > a {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+}
+
+.img-footer {
+    width: 170px;
+    padding: 12px;
+    font-family: var(--font01);
+}
+
+
+
+.tel::before, .email::before, .adress::before {
+    position: relative;
+    right: 2px;
+    top: 2px;
+}
+
+.tel::before {
+    content: url("imagens/telephone\ \(1\).png");
+}
+
+.email::before {
+    content: url("imagens/email.png");
+}
+
+.adress::before {
+    content: url("imagens/placeholder.png");
+}
