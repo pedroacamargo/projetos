@@ -196,7 +196,7 @@ nav a:hover {
 }
 
 .transparent {
-    background-color: #b1610090;
+    background-color: #b1000090;
     color: white;
     font-family: var(--font03);
     font-size: 1.2em;
@@ -205,14 +205,27 @@ nav a:hover {
     width: 430px;
     position: absolute;
     z-index: 2;
-    transition: 3s;
+    transition: 1.5s ease-in-out;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.transparent > img {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 30px;
+}
+
 .welcome-container:hover > .welcome > .welcome-img > .transparent {
     right: 0px;
+}
+
+.linha1 {
+    height: 4px;
+    width: 100%;
+    background-color: #eee;
 }
 
 .linha2 {
@@ -222,7 +235,7 @@ nav a:hover {
     transition: 1s;
 }
 
-.welcome-container:hover > .welcome > .welcome-written > .linha2 {
+.welcome-container:hover > .welcome > .welcome-written > .linha1 > .linha2 {
     width: 100%;
 }
 
