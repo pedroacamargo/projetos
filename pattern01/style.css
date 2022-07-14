@@ -131,77 +131,85 @@ nav a:hover {
     transition: 750ms;
 }
 
-section {
+.welcome-container {
     background-color: whitesmoke;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.144);
-    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.442);
 }
 
-section:hover {
-    background-color: lightblue;
-    transition: 1s;
+.welcome {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 1080px;
+    padding: 10px;
+    margin: 20px;
+
 }
 
-section img {
-    float: right;
+.test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-section h1 {
+.welcome-written {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 550px;
+    height: 366px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.welcome-written > h1 {
+    color: #72120B;
+    font-family: var(--font03);
+    padding-bottom: 20px;
+}
+
+.welcome-written > p {
+    color: rgb(189, 180, 180);
     font-family: var(--font02);
-    color: rgb(128, 22, 22);
-    font-size: 3em;
-    font-weight: 400;
-    padding: 10px 0px 5px 20px;
-}
-
-div.linha-h1 {
-    width: 200px;
-    height: 3px;
-    background-color: rgb(128, 22, 22);
-    margin: 0px 0px 0px 20px;
-}
-
-
-section p {
-    padding: 5px 30px 30px 20px;
-    width: 625px;
+    font-size: 1.2em;
     text-align: justify;
-    color: gray;
-    font-family: var(--font01);
-    font-size: 1.3em;
+    padding-top: 20px;
 }
 
-section img {
-    width: 300px;
-    height: 250px;
-    border-radius: 2px;
+.welcome-written > span > a {
+    color: white;
+    position: relative;
+    top: 40px;
+    left: 130px;
+    background-color: #72120B;
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-family: var(--font02);
+    margin-bottom: 20px;
+}
+
+.welcome-img {
+    display: flex;
+}
+
+.welcome-img > img {
+    max-width: 450px;
+    border-radius: 10px;
     box-shadow: 2px 2px 5px black;
 }
 
-section:hover > img {
-    border-radius: 100px 3px;
-    width: 330px;
-    height: 270px;
+.welcome-container:hover > .welcome > .test > .welcome-written > span > a {
+    padding: 22px 45px;
     transition: 2s;
 }
 
-section:hover > div.linha-h1 {
-    width: 600px;
-    height: 3px;
+.welcome-container:hover > .welcome > .test > .welcome-written > div.linha {
+    width: 380px;
     transition: 2s;
-    background-color: rgb(19, 42, 104);
 }
 
-section:hover > h1 {
-    color: rgb(19, 42, 104);
-}
-
-section:hover > p {
-    color: black;
-}
 
 aside {
     background-color: #003366;
